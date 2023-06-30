@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>project</title>
+  </head>
+  <body>
+    <div class="app">
+
+      <div class="container">
+
+        <form>
+          <input id="date-start" type="date">
+          <label for="date-start"></label>
+          <input id="date-end"  value="dd-mm-yyyy" disabled type="date">
+          <label for="date-end"></label>
+        </form>
+
+        <div class="presets-btn">
+          <div class="days__title">Додати:</div>
+          <form>
+          <button class="presets-btn__week" disabled>Тиждень</button>
+          <button class="presets-btn__month" disabled>Місяць</button>
+        </form>
+      </div>
+
+
+        <div class="days">
+          <div class="days__title">Порахувати кількість:</div>
+          <form>
+            <input type="radio" name="days" value="Всі дні" class="days__choose" id="All days" checked>
+            <label for="All days">Всі дні</label>  
+            <input type="radio" name="days" value="Будні дні" class="days__choose" id="weekDay">
+            <label for="weekDay">Будні дні</label>
+            <input type="radio" name="days" value="Вихідні дні" class="days__choose" id="weekendDay">
+            <label for="weekendDay">Вихідні дні</label> 
+          </form>
+        </div>
+        
+        <div class="dimention">
+          <div class="dimention__title">Порахувати кількість:</div>
+          <form>
+            <input type="radio" name="dimention__time" value="Days" class="dimention__time" id="days" checked>
+            <label for="days">Днів</label> 
+            <input type="radio" name="dimention__time" value="Hours" class="dimention__time" id="hours">
+            <label for="hours">Годин</label> 
+            <input type="radio" name="dimention__time" value="Minutes" class="dimention__time" id="minutes">
+            <label for="minutes">Хвилин</label> 
+            <input type="radio" name="dimention__time" value="Seconds" class="dimention__time" id="seconds">
+            <label for="seconds">Секунд</label> 
+          </form>
+        </div>
+          
+
+        
+        <form>
+          <button class="btn" disabled>Порахувати</button>
+        </form>
+        
+        <ul class="result-list result">
+          <!-- <li class="result__item">
+            <div class="result__start result-data">Старт
+              <div class="result__start__data"></div>
+            </div>
+            <div class="result__end result-data">Кінець
+              <div class="result__end__data"></div>
+            </div>
+            <div class="result__days result-data">Тип
+              <div class="result__days__type"></div>
+            </div>
+            <div class="result__time result-data">Різниця
+              <div class="result__time__difference"></div>
+            </div>
+            <div class="result__unit-time result-data">Одиниці виміру
+              <div class="result__dimention"></div>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>
